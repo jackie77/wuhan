@@ -37,8 +37,9 @@ function posObj(sheet, id, row, col, x, y) {
 function posObjs() {
 posObj('933999498', 'embed_552169636', 0, 7, 3, 0);posObj('933999498', 'embed_687117984', 24, 7, 10, 12);posObj('933999498', 'embed_658161838', 24, 9, 28, 12);posObj('933999498', 'embed_1366541756', 47, 7, 29, 17);posObj('933999498', 'embed_326270628', 74, 7, 29, 12);posObj('933999498', 'embed_228490513', 9, 7, 20, 2);posObj('933999498', 'embed_561460717', 92, 7, 5, 2);posObj('933999498', 'embed_573633970', 92, 9, 60, 2);posObj('933999498', 'embed_1087888518', 56, 7, 3, 11);};
 posObjs();
-    var win = window.open("", '收货地址', "height=400,width=500,status=yes,toolbar=no,menubar=no,location=no");
-    win.document.body.innerHTML = "<h1>收货地址<h1><h3>发货至美国收货地址:</h3><h4>2150 N 1st ST, Suite 150, San Jose CA 95131</h4><br><h3>收件人:</h3><h4>DX Foundation+你的姓名</h4>";   
-    win.document.body.style.fontFamily = "Helvetica";
-    win.document.body.style.textAlign = "center";
+      var address = document.createElement("DIV");
+    address.style.marginLeft = "300px";
+    address.innerHTML = "<h2><small>发货至美国收货地址:</small>  <big>2150 N 1st ST, Suite 150, San Jose CA 95131</big></br><small>收件人:</small>  <big>DX Foundation+你的姓名</big></h2>";   
+    var ref = document.getElementById("google-chart");
+    ref.parentNode.insertBefore(address, ref);
 </script>
